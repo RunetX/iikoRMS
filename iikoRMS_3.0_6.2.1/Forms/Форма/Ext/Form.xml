@@ -3,7 +3,7 @@
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
-			<v8:content>Загрузка данных из iiko RMS 6.2.1</v8:content>
+			<v8:content>Загрузка данных из iiko RMS 6.1.0</v8:content>
 		</v8:item>
 	</Title>
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
@@ -39,10 +39,6 @@
 					</ToolTip>
 					<ExtendedTooltip name="ОсновнаяExtendedTooltip" id="799"/>
 					<ChildItems>
-						<UsualGroup name="Группа23" id="360">
-							<Group>Horizontal</Group>
-							<ExtendedTooltip name="Группа23ExtendedTooltip" id="800"/>
-						</UsualGroup>
 						<UsualGroup name="Группа12" id="247">
 							<HorizontalStretch>false</HorizontalStretch>
 							<VerticalStretch>false</VerticalStretch>
@@ -52,20 +48,6 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа12ExtendedTooltip" id="801"/>
 							<ChildItems>
-								<InputField name="Поле25" id="243">
-									<DataPath>НачПериода</DataPath>
-									<HorizontalAlign>Center</HorizontalAlign>
-									<HorizontalStretch>true</HorizontalStretch>
-									<ContextMenu name="Поле25КонтекстноеМеню" id="244"/>
-									<ExtendedTooltip name="Поле25ExtendedTooltip" id="802"/>
-								</InputField>
-								<InputField name="Поле26" id="245">
-									<DataPath>КонПериода</DataPath>
-									<HorizontalAlign>Center</HorizontalAlign>
-									<HorizontalStretch>true</HorizontalStretch>
-									<ContextMenu name="Поле26КонтекстноеМеню" id="246"/>
-									<ExtendedTooltip name="Поле26ExtendedTooltip" id="803"/>
-								</InputField>
 								<LabelDecoration name="Декорация13" id="361">
 									<ContextMenu name="Декорация13КонтекстноеМеню" id="362"/>
 									<ExtendedTooltip name="Декорация13ExtendedTooltip" id="804"/>
@@ -106,182 +88,31 @@
 									</ToolTip>
 									<ExtendedTooltip name="ОсновнойExtendedTooltip" id="808"/>
 									<ChildItems>
-										<UsualGroup name="ВариантЗагрузки" id="173">
+										<InputField name="ДиректорияЗагрузки" id="250">
+											<DataPath>Каталог1с</DataPath>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Выбор загрузки</v8:content>
+													<v8:content>Директория с файлами загрузки</v8:content>
 												</v8:item>
 											</Title>
 											<ToolTip>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Вариант загрузки</v8:content>
+													<v8:content>Выбор расположения файлов выгрузки документов из iiko</v8:content>
 												</v8:item>
 											</ToolTip>
-											<Group>Horizontal</Group>
-											<Representation>StrongSeparation</Representation>
-											<ExtendedTooltip name="ВариантЗагрузкиExtendedTooltip" id="809"/>
-											<ChildItems>
-												<Pages name="Откуда" id="176">
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>С сервера</v8:content>
-														</v8:item>
-													</Title>
-													<ToolTip>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Откуда</v8:content>
-														</v8:item>
-													</ToolTip>
-													<PagesRepresentation>TabsOnLeftHorizontal</PagesRepresentation>
-													<ExtendedTooltip name="ОткудаExtendedTooltip" id="810"/>
-													<ChildItems>
-														<Page name="Сервер" id="248">
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>С сервера</v8:content>
-																</v8:item>
-															</Title>
-															<ToolTip>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Сервер</v8:content>
-																</v8:item>
-															</ToolTip>
-															<Group>Horizontal</Group>
-															<ExtendedTooltip name="СерверExtendedTooltip" id="811"/>
-															<ChildItems>
-																<UsualGroup name="ССервера" id="174">
-																	<ToolTip>
-																		<v8:item>
-																			<v8:lang>ru</v8:lang>
-																			<v8:content>С сервера</v8:content>
-																		</v8:item>
-																	</ToolTip>
-																	<Group>Vertical</Group>
-																	<Representation>None</Representation>
-																	<ShowTitle>false</ShowTitle>
-																	<ExtendedTooltip name="ССервераExtendedTooltip" id="812"/>
-																	<ChildItems>
-																		<InputField name="ПутьКСерверу" id="167">
-																			<DataPath>ПутьКСерверу</DataPath>
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Сервер</v8:content>
-																				</v8:item>
-																			</Title>
-																			<HorizontalAlign>Right</HorizontalAlign>
-																			<ContextMenu name="ПутьКСерверуКонтекстноеМеню" id="168"/>
-																			<ExtendedTooltip name="ПутьКСерверуExtendedTooltip" id="813"/>
-																		</InputField>
-																		<InputField name="Логин" id="165">
-																			<DataPath>Логин</DataPath>
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Логин</v8:content>
-																				</v8:item>
-																			</Title>
-																			<HorizontalAlign>Right</HorizontalAlign>
-																			<HorizontalStretch>true</HorizontalStretch>
-																			<ContextMenu name="ЛогинКонтекстноеМеню" id="166"/>
-																			<ExtendedTooltip name="ЛогинExtendedTooltip" id="814"/>
-																		</InputField>
-																	</ChildItems>
-																</UsualGroup>
-																<UsualGroup name="ССервера2" id="175">
-																	<ToolTip>
-																		<v8:item>
-																			<v8:lang>ru</v8:lang>
-																			<v8:content>С сервера2</v8:content>
-																		</v8:item>
-																	</ToolTip>
-																	<Group>Vertical</Group>
-																	<Representation>None</Representation>
-																	<ShowTitle>false</ShowTitle>
-																	<ExtendedTooltip name="ССервера2ExtendedTooltip" id="815"/>
-																	<ChildItems>
-																		<InputField name="Порт" id="169">
-																			<DataPath>Порт</DataPath>
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Порт</v8:content>
-																				</v8:item>
-																			</Title>
-																			<HorizontalAlign>Right</HorizontalAlign>
-																			<HorizontalStretch>true</HorizontalStretch>
-																			<EditFormat>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>ЧРГ=; ЧН=Ноль; ЧГ=0</v8:content>
-																				</v8:item>
-																			</EditFormat>
-																			<ContextMenu name="ПортКонтекстноеМеню" id="170"/>
-																			<ExtendedTooltip name="ПортExtendedTooltip" id="816"/>
-																		</InputField>
-																		<InputField name="Пароль" id="171">
-																			<DataPath>Пароль</DataPath>
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Пароль</v8:content>
-																				</v8:item>
-																			</Title>
-																			<HorizontalAlign>Right</HorizontalAlign>
-																			<PasswordMode>true</PasswordMode>
-																			<ContextMenu name="ПарольКонтекстноеМеню" id="172"/>
-																			<ExtendedTooltip name="ПарольExtendedTooltip" id="817"/>
-																		</InputField>
-																	</ChildItems>
-																</UsualGroup>
-															</ChildItems>
-														</Page>
-														<Page name="ИзФайла" id="249">
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Из файла</v8:content>
-																</v8:item>
-															</Title>
-															<ToolTip>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Из файла</v8:content>
-																</v8:item>
-															</ToolTip>
-															<ExtendedTooltip name="ИзФайлаExtendedTooltip" id="818"/>
-															<ChildItems>
-																<InputField name="ДиректорияЗагрузки" id="250">
-																	<DataPath>Каталог1с</DataPath>
-																	<Title>
-																		<v8:item>
-																			<v8:lang>ru</v8:lang>
-																			<v8:content>Директория с файлами загрузки</v8:content>
-																		</v8:item>
-																	</Title>
-																	<HorizontalAlign>Left</HorizontalAlign>
-																	<ChoiceButton>true</ChoiceButton>
-																	<AutoMarkIncomplete>true</AutoMarkIncomplete>
-																	<ChooseType>false</ChooseType>
-																	<ContextMenu name="ДиректорияЗагрузкиКонтекстноеМеню" id="251"/>
-																	<ExtendedTooltip name="ДиректорияЗагрузкиExtendedTooltip" id="819"/>
-																	<Events>
-																		<Event name="StartChoice">ИмяФайлаДанныхНачалоВыбора</Event>
-																		<Event name="Opening">КаталогЭкспортаОткрытие</Event>
-																	</Events>
-																</InputField>
-															</ChildItems>
-														</Page>
-													</ChildItems>
-												</Pages>
-											</ChildItems>
-										</UsualGroup>
+											<HorizontalAlign>Left</HorizontalAlign>
+											<ChoiceButton>true</ChoiceButton>
+											<AutoMarkIncomplete>true</AutoMarkIncomplete>
+											<ChooseType>false</ChooseType>
+											<ContextMenu name="ДиректорияЗагрузкиКонтекстноеМеню" id="251"/>
+											<ExtendedTooltip name="ДиректорияЗагрузкиExtendedTooltip" id="819"/>
+											<Events>
+												<Event name="StartChoice">ИмяФайлаДанныхНачалоВыбора</Event>
+												<Event name="Opening">КаталогЭкспортаОткрытие</Event>
+											</Events>
+										</InputField>
 										<UsualGroup name="РежимЗагрузкиДокументов" id="177">
 											<Title>
 												<v8:item>
@@ -308,6 +139,13 @@
 														<CheckBoxField name="Поле1" id="178">
 															<DataPath>ЗД</DataPath>
 															<TitleLocation>Right</TitleLocation>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Ранее выгруженные документы будут заменены </v8:content>
+																</v8:item>
+															</ToolTip>
+															<ToolTipRepresentation>Button</ToolTipRepresentation>
 															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="Поле1КонтекстноеМеню" id="179"/>
 															<ExtendedTooltip name="Поле1ExtendedTooltip" id="822"/>
@@ -315,6 +153,13 @@
 														<CheckBoxField name="Проводить" id="180">
 															<DataPath>Проводить</DataPath>
 															<TitleLocation>Right</TitleLocation>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Загружаемые документы будут автоматически проведены</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ToolTipRepresentation>Button</ToolTipRepresentation>
 															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="ПроводитьКонтекстноеМеню" id="181"/>
 															<ExtendedTooltip name="ПроводитьExtendedTooltip" id="823"/>
@@ -344,22 +189,22 @@
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="Группа9ExtendedTooltip" id="834"/>
 											<ChildItems>
-												<UsualGroup name="УсловияОтборДокументов" id="201">
+												<UsualGroup name="УсловияОтбораДокументов" id="201">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Условия отбор документов</v8:content>
+															<v8:content>Условия отбора документов</v8:content>
 														</v8:item>
 													</Title>
 													<ToolTip>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Условия отбор документов</v8:content>
+															<v8:content>Условия отбора документов</v8:content>
 														</v8:item>
 													</ToolTip>
 													<Group>Horizontal</Group>
 													<Representation>StrongSeparation</Representation>
-													<ExtendedTooltip name="УсловияОтборДокументовExtendedTooltip" id="835"/>
+													<ExtendedTooltip name="УсловияОтбораДокументовРасширеннаяПодсказка" id="835"/>
 													<ChildItems>
 														<UsualGroup name="Группа5" id="204">
 															<Group>Vertical</Group>
@@ -576,6 +421,17 @@
 												</UsualGroup>
 											</ChildItems>
 										</UsualGroup>
+										<Button name="Загрузка" id="239">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.Загрузка</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Загрузить документы</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ЗагрузкаExtendedTooltip" id="960"/>
+										</Button>
 									</ChildItems>
 								</Page>
 								<Page name="ГруппаКонтрагенты" id="2">
@@ -2068,17 +1924,6 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа11ExtendedTooltip" id="959"/>
 							<ChildItems>
-								<Button name="Загрузка" id="239">
-									<Type>UsualButton</Type>
-									<CommandName>Form.Command.Загрузка</CommandName>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Загрузить документы</v8:content>
-										</v8:item>
-									</Title>
-									<ExtendedTooltip name="ЗагрузкаExtendedTooltip" id="960"/>
-								</Button>
 								<Button name="Выполнить" id="240">
 									<Type>UsualButton</Type>
 									<Width>9</Width>
@@ -2199,6 +2044,7 @@
 														</CheckBoxField>
 														<CheckBoxField name="ЮР" id="230">
 															<DataPath>ЮР</DataPath>
+															<Visible>false</Visible>
 															<TitleLocation>Right</TitleLocation>
 															<ToolTip>
 																<v8:item>
@@ -2213,6 +2059,7 @@
 														</CheckBoxField>
 														<CheckBoxField name="ОтборКонцепции" id="1158">
 															<DataPath>ОтборКонцепции</DataPath>
+															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -2472,6 +2319,13 @@
 												</InputField>
 												<InputField name="РасходыНУ" id="1173">
 													<DataPath>РасходыНУ</DataPath>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Посдставляется в поле Расходы НУ табличной части Авансовых отчетов</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ToolTipRepresentation>Button</ToolTipRepresentation>
 													<ContextMenu name="РасходыНУКонтекстноеМеню" id="1174"/>
 													<ExtendedTooltip name="РасходыНУРасширеннаяПодсказка" id="1175"/>
 												</InputField>
@@ -3092,7 +2946,7 @@
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
-				<v8:Type>cfg:ExternalDataProcessorObject.Загрузка</v8:Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ЗагрузкаДокументовИзIiko</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<Save>
